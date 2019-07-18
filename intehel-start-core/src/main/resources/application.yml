@@ -1,0 +1,31 @@
+
+#数据库连接
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: dev
+
+#映射文件路径
+mybatis:
+  #mapper-locations: classpath*:**/*Mapper.xml
+  #type-aliases-package: com.intehel.core.system.dto
+  configuration:
+    map-underscore-to-camel-case: true
+#通用Mapper配置
+mapper:
+  mappers: com.intehel.core.base.Mapper
+  not-empty: false
+  identity: MYSQL
+
+
+
+
+
+
+
+
+
+
+
+
